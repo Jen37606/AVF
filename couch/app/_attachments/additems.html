@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Add Movie</title>
+	<meta name="description" content="Add Movie Page" />
+	<meta name="keywords" content="" />
+	<meta name="robots" content="" />
+
+	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.css" />
+	<link rel="stylesheet" type="text/css" href="jquery.mobile.datebox.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+	<div data-role="page" id="addmovie" data-add-back-btn="true">
+		<div id="pagetitle">
+			<img src="images/logo.png" align="left" width="30" height="20" alt="" title="" border="0" /><h1>My Movie Collection</h1>
+		</div>
+		<div data-role="header" data-theme="b">
+			<h1>Add Movie</h1>
+		</div>
+		<div data-role="content" class="content">
+			<form action="#" method="post" onsubmit="addMovie();" name="addmovieform" id="addmovieform">
+			<div id="movieinfo" data-role="fieldcontain">
+			<fieldset>
+				<legend><h3>Movie Information</h3></legend>
+				<label for="title">Movie Title:</label>
+				<input type="text" id="title" name="title" class="required" /><br />
+				<label for="actor">Main Actor/Actress:</label>
+				<input type="text" id="actor" name="actor" /><br />
+				<label for="description">Movie Description: </label>
+				<textarea id="description"></textarea>
+			</fieldset>
+			</form>
+		</div>
+		<div id="addmoviebuttons" data-role="fieldcontain">
+			<div id="submit-reset-buttons">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<input type="reset" id="reset" value="Reset Form" />
+					</div>
+					<div class="ui-block-b">
+						<input type="submit" id="submit" class="addmoviebutton" value="Add Movie" data-theme="b" />
+					</div>
+				</div>
+			</div>
+			<div id="edit-item-button" style="display: none;">
+				<input type="button" id="edit-item" value="Edit Item" />
+			</div>
+		</div>	
+			
+			
+			<!--
+			<form action="#" method="post" onsubmit="validateForm();" name="addmovieform" id="addmovieform">
+			<div id="selectgenre" data-role="fieldcontain">
+			<fieldset>
+				<label for="genre"><h3>Select A Movie Genre</h3></label>
+				<select id="genre" name="genre" data-native-menu="false" class="required">
+					<option data-placeholder="true" value>Choose a Genre</option>
+					<optgroup label="Genres">
+					<option value="Comedy">Comedy</option>
+					<option value="Drama">Drama</option>
+					<option value="Action">Action</option>
+					<option value="Horror">Horror</option>
+					<option value="Documentary">Documentary</option>
+					<option value="Other">Other</option>
+					</optgroup>
+				</select>
+			</fieldset>
+		</div>
+		<div id="movieinfo" data-role="fieldcontain">
+			<fieldset>
+				<legend><h3>Movie Information</h3></legend>
+				<label for="title">Movie Title:</label>
+				<input type="text" id="title" name="title" class="required" /><br />
+				<label for="actor">Main Actor/Actress:</label>
+				<input type="text" id="actor" name="actor" /><br />
+				<label for="director">Director:</label>
+				<input type="text" id="director" name="director" /><br />
+				<label for="rating">Rating:</label>
+				<p>Rate your movie with 1 being a bad rating and 5 being the best.</p>
+				<input type="range" value="4" min="1" max="5" id="rating" /><br /><br />
+				<label for="favorites">Add to favorites?</label>
+				<input type="checkbox" name="favorites" id="favorites" /><br />
+				<label for="family">Is this a family movie?</label>
+				<label for="yes">Yes </label><input type="radio" value="Yes" id="yes" name="family" />
+				<label for="no">No </label><input type="radio" checked value="No" id="no" name="family" /><br />
+				<label for="release">Release Date:</label><br />
+				<input type="date" id="release" name="release" class="required" data-role="datebox" data-options='{"mode": "flipbox"}' /><br /><br />
+				<label for="description">Movie Description: </label>
+				<textarea id="description"></textarea>
+			</fieldset>
+		</div>
+		<div id="addmoviebuttons" data-role="fieldcontain">
+			<div id="submit-reset-buttons">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<input type="reset" id="reset" value="Reset Form" />
+					</div>
+					<div class="ui-block-b">
+						<input type="submit" id="submit" class="addmoviebutton" value="Add Movie" data-theme="b" />
+					</div>
+				</div>
+			</div>
+			<div id="edit-item-button" style="display: none;">
+				<input type="button" id="edit-item" value="Edit Item" />
+			</div>
+		</div>
+		</form>
+		--!>
+		<div id="list"></div>
+	
+		<!--
+		<div id="clearlocal">
+			<p id="clear"><a href="#" onclick="clearItems(); location.reload();">Clear Local Storage</a></p>
+		</div>
+		-->
+	
+	
+
+		</div>
+	</div>
+	
+		<script src="js/jquery-1.6.4.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.js"></script>
+		<script src="js/libs/jquery.validate.min.js"></script>
+		<script src="js/libs/jquery.mobile.datebox.js"></script>
+		<script src="js/jquery.couch.js"></script>
+		<script src="js/main.js"></script>
+		<!--<script>getItems();</script>-->	
+</body>
+</html>

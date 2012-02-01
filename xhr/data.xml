@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movies>
+	<movie>
+		<title>Iron Man</title>
+		<genre>Action</genre>
+		<actors>Robert Downey Jr., Gwyneth Paltrow</actors>
+		<director>Jon Favreau</director>
+		<rating>4</rating>
+		<favorite>true</favorite>
+		<family>true</family>
+		<release>2008-2-5</release>
+		<description>When wealthy industrialist Tony Stark is forced to build an armored suit after a life-threatening incident, he ultimately decides to use its technology to fight against evil.</description>
+	</movie>
+	<movie>
+		<title>Transformers</title>
+		<genre>Action</genre>
+		<actors>Shia LaBeouf, Megan Fox</actors>
+		<director>Michael Bay</director>
+		<rating>5</rating>
+		<favorite>true</favorite>
+		<family>true</family>
+		<release>2007-3-7</release>
+		<description>An ancient struggle re-erupts on Earth between two extraterrestrial clans, the heroic Autobots and the evil Decepticons, with a clue to the ultimate power held by a young teenager.</description>
+	</movie>
+	<movie>
+		<title>Anchorman: The Legend of Ron Burgundy</title>
+		<genre>Comedy</genre>
+		<actors>Will Ferrell, Christina Applegate, Steve Carell</actors>
+		<director>Adam McKay</director>
+		<rating>5</rating>
+		<favorite>true</favorite>
+		<family>false</family>
+		<release>2004-9-7</release>
+		<description>Ron Burgundy is San Diego's top rated newsman in the male dominated broadcasting of the 1970's, but that's all about to change when a new female employee with ambition to burn arrives in his office.</description>
+	</movie>
+	<movie>
+		<title>30 Minutes or Less</title>
+		<genre>Comedy</genre>
+		<actors>Jesse Eisenberg, Danny ...z Ansari, Nick Swardson</actors>
+		<director>Ruben Fleischer</director>
+		<rating>4</rating>
+		<favorite>true</favorite>
+		<family>false</family>
+		<release>2011-12-8</release>
+		<description>Two fledgling criminals kidnap a pizza delivery guy, strap a bomb to his chest, and inform him that he has mere hours to rob a bank or else...</description>
+	</movie>
+	<movie>
+		<title>Step Brothers</title>
+		<genre>Comedy</genre>
+		<actors>Will Ferrell, John C. Reilly</actors>
+		<director>Adam McKay</director>
+		<rating>5</rating>
+		<favorite>true</favorite>
+		<family>false</family>
+		<release>2008-25-7</release>
+		<description>Two aimless middle-aged losers still living at home are forced against their will to become roommates when their parents get married.</description>
+	</movie>
+</movies>

@@ -1,0 +1,67 @@
+#pagetitle{
+	min-height: 1.1em; 
+	text-align: left; 
+	font-size: 16px; 
+	display: block; 
+	margin: .8em 10px .8em;  
+	padding: 0;  
+	text-overflow: ellipsis; 
+	overflow: hidden; 
+	white-space: nowrap; 
+	outline: 0 !important;
+}
+
+#pagetitle h1{
+	margin: 0; 
+	padding: 0; 
+	font-size: 16px; 
+	display: inline-block;
+}
+
+.content{
+	background-image:url("images/bg.gif");
+}
+
+.content p{
+	text-shadow: 1px 1px 2px #ccc;
+}
+
+#cta{
+	text-align: center;
+}
+
+#searchbar{
+	margin-left:10px;
+}
+
+#movie-list img{
+	padding-left: 10px;
+}
+
+#movieinfo h3{
+	margin: 0px;
+	padding: 0px 0px 10px 0px;
+}
+
+#movieinfo label{
+	padding-left: 2px;
+}
+
+label{
+	text-shadow: 1px 1px 2px #ccc;
+}
+
+fieldset{
+	text-shadow: 1px 1px 2px #ccc;
+}
+
+label.error{
+	display: block;
+	color: #cc0000;
+	padding: 10px 0px;
+}
+
+.movietitle{
+	list-style: none;
+	
+}

@@ -1,0 +1,348 @@
+<!--
+Jennifer Johnson
+ASD Week 3
+Term: 12/01
+
+-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Movie Collection App</title>
+	<meta name="description" content="Add Movie Page" />
+	<meta name="keywords" content="" />
+	<meta name="robots" content="" />
+	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+	<div data-role="page" id="home">
+		<div id="pagetitle">
+			<img src="images/logo.png" align="left" width="30" height="20" alt="" title="" border="0" /><h1>My Movie Collection</h1>
+		</div>
+		<div data-role="content" class="content">
+			<div id="cta">
+				<img src="images/CTA.png" title="" alt="" border="0" width="266" height="179" />
+			</div>
+			
+			<div id="searchbar" data-role="fieldcontain">
+				 <label for="search">Search For A Movie:</label>
+				 <input type="search" name="moviesearch" id="search" value="" />
+			</div>
+
+			<div id="addnewbutton">
+				<p>Now you can keep a library of all your movies! Add movies to your library or use the search feature to easily find movies in your library!</p>
+
+				<p><a href="additems.html" data-role="button" data-icon="plus" data-theme="b">Add A New Movie</a></p>
+			</div>
+				<p><a href="browse.html" data-role="button" data-theme="b" id="browsebutton">Browse Movies</a></p>
+					
+			
+			<div id="getdata" data-role="fieldcontain">
+				<div id="get-data-buttons">
+					<div class="ui-grid-a">
+						<div class="ui-block-a">
+							<a href="#" data-role="button" data-theme="b" id="jsonbutton">JSON</a>
+						</div>
+					
+						<div class="ui-block-b">
+							<a href="#" data-role="button" data-theme="b" id="xmlbutton">XML</a>
+						</div>
+						
+						<div class="ui-block-a">
+							<a href="#" data-role="button" data-theme="b" id="csvbutton">CSV</a>
+						</div>
+						
+						<div class="ui-block-b">
+							<a href="#" data-role="button" data-theme="b" id="couchbutton">Couch</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="mydata"></div>
+			
+			<div id="searchbycat">
+				<p>&nbsp;</p>
+				<p>Browse Collection By Genre:</p>
+				<p>&nbsp;</p>
+				<ul data-role="listview">
+					<li><a href="#comedy"><h2>Comedy</h2></a></li>
+					<li><a href="#drama"><h2>Drama</h2></a></li>
+					<li><a href="#action"><h2>Action</h2></a></li>
+					<li><a href="#horror"><h2>Horror</h2></a></li>
+					<li><a href="#documentary"><h2>Documentary</h2></a></li>
+					<li><a href="#other"><h2>Other</h2></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<!-- ///////////COMEDY MOVIES PAGE///////////-->
+<div data-role="page" id="comedy" data-add-back-btn="true">
+<div id="pagetitle">
+<img src="images/logo.png" align="left" width="30" height="20" alt="" title="" border="0" /><h1>My Movie Collection</h1>
+</div>
+<div data-role="header" data-theme="b">
+<h1>Comedy</h1>
+</div>
+<div id="movie-list" data-role="content">
+
+<ul data-role="listview">
+<li>
+<a href="#anchorman" />
+<img src="images/movies/anchorman.gif" />
+<h3>Anchorman</h3>
+<p>Will Ferrell</p>
+</a>
+</li>
+<li>
+<a href="#hangover" />
+<img src="images/movies/hangover.gif" />
+<h3>Hangover</h3>
+<p>Bradley Cooper, Ed Helms, Zach Galifinakis</p>
+</a>
+</li>
+<li>
+<a href="#happygilmore" />
+<img src="images/movies/happy_gilmore.gif" />
+<h3>Happy Gilmore</h3>
+<p>Adam Sandler</p>
+</a>
+</li>
+<li>
+<a href="#pineappleexpress" />
+<img src="images/movies/pineapple_express.gif" />
+<h3>Pineapple Express</h3>
+<p>Seth Rogan, James Franco</p>
+</a>
+</li>
+<li>
+<a href="#stepbrothers" />
+<img src="images/movies/step-brothers.gif" />
+<h3>Step Brothers</h3>
+<p>Will Ferrell, John C. Reilly</p>
+</a>
+</li>
+<li>
+<a href="#superbad" />
+<img src="images/movies/superbad.gif" />
+<h3>Superbad</h3>
+<p>Michael Cera, Jonah Hill, Christopher Mintz-Plasse</p>
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ///////////DRAMA MOVIES PAGE///////////-->
+<div data-role="page" id="drama" data-add-back-btn="true">
+<div id="pagetitle">
+<img src="images/logo.png" align="left" width="30" height="20" alt="" title="" border="0" /><h1>My Movie Collection</h1>
+</div>
+<div data-role="header" data-theme="b">
+<h1>Drama</h1>
+</div>
+<div id="movie-list" data-role="content">
+
+<ul data-role="listview">
+<li>
+<a href="#premonition" />
+<img src="images/movies/premonition.gif" />
+<h3>Premonition</h3>
+<p>Sandra Bullock</p>
+</a>
+</li>
+<li>
+<a href="#savethelastdance" />
+<img src="images/movies/save-the-last-dance.gif" />
+<h3>Save The Last Dance</h3>
+<p>Julia Stiles, Sean Patrick Thomas</p>
+</a>
+</li>
+<li>
+<a href="#shawshankredemption" />
+<img src="images/movies/shawshank_redemption.gif" />
+<h3>Shawshank Redemption, The</h3>
+<p>Tim Robbins, Morgan Freeman</p>
+</a>
+</li>
+<li>
+<a href="#twilight" />
+<img src="images/movies/twilight.gif" />
+<h3>Twilight</h3>
+<p>Kristen Stewart, Robert Pattinson, Taylor Lautner</p>
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ///////////ACTION MOVIES PAGE///////////-->
+<div data-role="page" id="action" data-add-back-btn="true">
+<div id="pagetitle">
+<img src="images/logo.png" align="left" width="30" height="20" alt="" title="" border="0" /><h1>My Movie Collection</h1>
+</div>
+<div data-role="header" data-theme="b">
+<h1>Action</h1>
+</div>
+<div id="movie-list" data-role="content">
+
+<ul data-role="listview">
+<li>
+<a href="#darkknight" />
+<img src="images/movies/dark-knight.gif" />
+<h3>Dark Knight, The</h3>
+<p>Christian Bale, Heath Ledger</p>
+</a>
+</li>
+<li>
+<a href="#ironman" />
+<img src="images/movies/iron-man.gif" />
+<h3>Iron Man</h3>
+<p>Robert Downey Jr., Gwyneth Paltrow</p>
+</a>
+</li>
+<li>
+<a href="#startrek" />
+<img src="images/movies/star-trek.gif" />
+<h3>Star Trek</h3>
+<p>Chris Pine, Zachary Quinto</p>
+</a>
+</li>
+<li>
+<a href="#transformers" />
+<img src="images/movies/transformers.gif" />
+<h3>Transformers</h3>
+<p>Shia LaBeouf, Megan Fox</p>
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ///////////HORROR MOVIES PAGE///////////-->
+<div data-role="page" id="horror" data-add-back-btn="true">
+<div id="pagetitle">
+<img src="images/logo.png" align="left" width="30" height="20" alt="" title="" border="0" /><h1>My Movie Collection</h1>
+</div>
+<div data-role="header" data-theme="b">
+<h1>Horror</h1>
+</div>
+<div id="movie-list" data-role="content">
+
+<ul data-role="listview">
+<li>
+<a href="#dawnofthedead" />
+<img src="images/movies/dawn-of-the-dead.gif" />
+<h3>Dawn Of The Dead</h3>
+<p>Sarah Polley, Ving Rhames, Mekhi Phifer</p>
+</a>
+</li>
+<li>
+<a href="#paranormalactivity2" />
+<img src="images/movies/paranormal-activity-2.gif" />
+<h3>Paranormal Activity 2</h3>
+<p>Katie Featherston, Micah Sloat, Molly Ephraim</p>
+</a>
+</li>
+<li>
+<a href="#shining" />
+<img src="images/movies/shining.gif" />
+<h3>Shining, The</h3>
+<p>Jack Nicholson, Shelly Duvall</p>
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ///////////DOCUMENTARY MOVIES PAGE///////////-->
+<div data-role="page" id="documentary" data-add-back-btn="true">
+<div id="pagetitle">
+<img src="images/logo.png" align="left" width="30" height="20" alt="" title="" border="0" /><h1>My Movie Collection</h1>
+</div>
+<div data-role="header" data-theme="b">
+<h1>Documentary</h1>
+</div>
+<div id="movie-list" data-role="content">
+
+<ul data-role="listview">
+<li>
+<a href="#fatsicknearlydead" />
+<img src="images/movies/fat-sick-and-nearly-dead.gif" />
+<h3>Fat Sick &amp; Nearly Dead</h3>
+<p>Joe Cross</p>
+</a>
+</li>
+<li>
+<a href="#inconvenienttruth" />
+<img src="images/movies/inconvenient-truth.gif" />
+<h3>Inconvenient Truth, An</h3>
+<p>Al Gore, Billy West</p>
+</a>
+</li>
+<li>
+<a href="#supersizeme" />
+<img src="images/movies/super-size-me.gif" />
+<h3>Super Size Me</h3>
+<p>Morgan Spurlock</p>
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ///////////OTHER MOVIES PAGE///////////-->
+<div data-role="page" id="other" data-add-back-btn="true">
+<div id="pagetitle">
+<img src="images/logo.png" align="left" width="30" height="20" alt="" title="" border="0" /><h1>My Movie Collection</h1>
+</div>
+<div data-role="header" data-theme="b">
+<h1>Other</h1>
+</div>
+<div id="movie-list" data-role="content">
+
+<ul data-role="listview">
+<li>
+<a href="#howtotrainyourdragon" />
+<img src="images/movies/how-to-train-your-dragon.gif" />
+<h3>How to Train Your Dragon</h3>
+<p>Jay Baruchel, Gerard Butler</p>
+</a>
+</li>
+<li>
+<a href="#littlemermaid" />
+<img src="images/movies/little-mermaid.gif" />
+<h3>Little Mermaid, The</h3>
+<p>Jodi Benson, Samuel E. Wright, Rene Auberjonois</p>
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+
+
+<script src="js/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.js"></script>
+<script src="js/jquery.couch.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
