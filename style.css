@@ -12,40 +12,47 @@
 }
 
 #pagetitle h1{
-	margin: 0; 
+	margin: 0 0 0 10px; 
 	padding: 0; 
-	font-size: 16px; 
+	font-size: 20px; 
 	display: inline-block;
 }
 
-.content{
-	background-image:url("images/bg.gif");
+.section{
+	border: solid 2px #aaaaaa;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin: 15px 0px 15px 0px;
+	
 }
 
-.content p{
-	text-shadow: 1px 1px 2px #ccc;
+.section h2{
+	background-color: #cccccc;
+	padding: 10px;
+	font-size: 16px;
 }
 
-#cta{
+.section p{
+	font-size: 15px;
+	padding: 0 10px 0 10px;
+}
+
+.icon{
+	width: 60px;
+	height: 60px;
+	border: solid 2px #aaaaaa;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 	text-align: center;
+	margin: 0 10px 0 10px;
+	float: left;
 }
 
-#searchbar{
-	margin-left:10px;
+.icon p{
+	font-size: 12px;
+	padding: 2px;
 }
 
-#movie-list img{
-	padding-left: 10px;
-}
-
-#movieinfo h3{
-	margin: 0px;
-	padding: 0px 0px 10px 0px;
-}
-
-#movieinfo label{
-	padding-left: 2px;
-}
 
 label{
 	text-shadow: 1px 1px 2px #ccc;
@@ -60,197 +67,3 @@ label.error{
 	color: #cc0000;
 	padding: 10px 0px;
 }
-
-.movietitle{
-	list-style: none;
-	
-}
-
-
-/*
-
-OLD CSS-------
-
-header{
-margin: 0px;
-}
-
-h1{
-font: 25px Arial;
-font-weight: bold;
-color: #333;
-padding: 10px;
-text-transform: capitalize;
-text-align: left;
-}
-
-header h1{
-text-align: center;
-}
-
-h2{
-font: 18px Arial;
-font-weight: bold;
-color: #555;
-text-transform: capitalize;
-}
-
-h3{
-font: 18px Arial;
-font-weight: bold;
-color: #555;
-text-transform: capitalize;
-}
-
-p{
-font: 16px Arial;
-font-weight: normal;
-color: #555;
-margin: 20px;
-}
-
-fieldset{
-font: 16px Arial;
-background: #eee;
-border: 1px solid #bbb;
-padding: 10px;
-}
-
-legend{
-color: navy;
-font-weight: bold;
-border-top: 1px solid #bbb;
-border-left: 1px solid #bbb;
-border-right: 1px solid #bbb;
-padding: 10px 15px;
-background-color: #eee;
-}
-
-label{
-color: #555;
-}
-
-input{
-height: 25px;
-width: 75%;
-font: 16px Arial;
-color: #555;
-margin: 10px 0px;
-}
-
-textarea{
-width: 75%;
-font: 16px Arial;
-color: #555;
-height: 100px;
-line-height: 20px;
-margin-top: 10px;
-}
-
-select{
-display: block;
-font: 16px Arial;
-color: #555;
-}
-
-a{
-font: 16px Arial;
-color: blue;
-text-decoration: none;
-}
-
-a:hover{
-color: orange;
-}
-
-ul{
-padding-left: 0px;
-}
-
-li{
-list-style: none;
-}
-
-li li{
-padding-left: 10px;
-font-style: italic;
-}
-
-hr{
-margin: 20px 0px;
-}
-
-#cta{
-text-align: center;
-}
-
-#searchbar{
-text-align: center;
-margin: 10px 20px 0px 20px;
-padding: 0px;
-height: 30px;
-}
-
-#search{
-width: 85%;
-background: #ffffff;
-border: 1px solid #bbb;
-border-radius:15px;
-height: 30px;
-padding: 0px 15px;
-margin: 0px 5px 0px 0px;
-}
-
-#go{
-border: 0px;
-background:url(images/search.gif);
-width: 30px;
-height: 30px;
-margin: 0px;
-padding: 0px;
-line-height: 25px;
-}
-
-.button{
-margin: 10px 20px;
-}
-
-.button h2{
-font-size: 22px;
-color: navy;
-font-weight: normal;
-background: #eee;
-border: 1px solid #bbb;
-border-radius:15px;
-padding: 10px;
-text-align: center;
-}
-
-.button h2 a{
-font-size: 22px;
-color: navy;
-}
-
-.button h2:hover{
-font-size: 22px;
-color: orange;
-}
-
-#clear{
-border: 1px solid #bbb;
-background-color: #eee;
-padding: 10px;
-}
-
-#newmovie{
-border: 1px solid #bbb;
-background-color: #eee;
-padding: 10px;
-}
-
-#newmovie p{
-font: 16px Arial;
-color: #555;
-}
-
-*/
