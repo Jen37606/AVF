@@ -3,7 +3,7 @@
 	text-align: left; 
 	font-size: 16px; 
 	display: block; 
-	margin: .8em 10px .8em;  
+	margin: 1em 10px -5px;  
 	padding: 0;  
 	text-overflow: ellipsis; 
 	overflow: hidden; 
@@ -23,7 +23,7 @@
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 	margin: 15px 0px 15px 0px;
-	
+	box-shadow: 0px 1px 1px 1px #444444;
 }
 
 .section h2{
@@ -43,6 +43,7 @@
 	border: solid 2px #aaaaaa;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
+	box-shadow: 0px 1px 1px 1px #000; 
 	text-align: center;
 	margin: 0 10px 0 10px;
 	float: left;
@@ -52,7 +53,6 @@
 	font-size: 12px;
 	padding: 2px;
 }
-
 
 label{
 	text-shadow: 1px 1px 2px #ccc;
