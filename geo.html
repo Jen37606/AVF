@@ -1,0 +1,74 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>AVF Demo - Geolocation</title>
+	<meta name="description" content="Add Movie Page" />
+	<meta name="keywords" content="" />
+	<meta name="robots" content="" />
+	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        
+        // Wait for PhoneGap to load
+        //
+        document.addEventListener("deviceready", onDeviceReady, false);
+        
+        // PhoneGap is ready
+        //
+        function onDeviceReady() {
+            navigator.geolocation.getCurrentPosition(onSuccess, onError);
+        }
+        
+        // onSuccess Geolocation
+        //
+        function onSuccess(position) {
+            var element = document.getElementById('geolocation');
+            element.innerHTML = 'Latitude: '           + position.coords.latitude              + '<br />' +
+            'Longitude: '          + position.coords.longitude             + '<br />' +
+            'Altitude: '           + position.coords.altitude              + '<br />' +
+            'Accuracy: '           + position.coords.accuracy              + '<br />' +
+            'Altitude Accuracy: '  + position.coords.altitudeAccuracy      + '<br />' +
+            'Heading: '            + position.coords.heading               + '<br />' +
+            'Speed: '              + position.coords.speed                 + '<br />' +
+            'Timestamp: '          + new Date(position.timestamp)          + '<br />';
+        }
+        
+        // onError Callback receives a PositionError object
+        //
+        function onError(error) {
+            alert('code: '    + error.code    + '\n' +
+                  'message: ' + error.message + '\n');
+        }
+        
+    </script>
+
+</head>
+<body>
+
+	<div data-role="page" data-add-back-btn="true">
+		<div id="pagetitle">
+			<h1>AVF Demo</h1>
+		</div>
+		<div data-role="content" class="content">
+			<div class="section">
+				<h2>Geolocation</h2>
+				<p id="geolocation">Your location</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.js"></script>
+</body>
+</html>
