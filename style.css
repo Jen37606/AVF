@@ -23,6 +23,10 @@ header{
     border-bottom: dashed 2px;
 }
 
+header img{
+    width: 80%;
+}
+
 .section{
 	border: solid 1px #ffffff;
 	-moz-border-radius: 15px;
