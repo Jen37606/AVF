@@ -11,11 +11,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Mobile IE needs ClearType for smoothing fonts -->
 	<meta http-equiv="cleartype" content="on">
-	<link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
-  
+   
 	<script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
     <script src="http://vjs.zencdn.net/c/video.js"></script>
     <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
@@ -25,8 +26,9 @@
 <body>
 
 	<div data-role="page">
+        <header><img src="images/codemeow-logo.png" width="80%" alt="" title="" border="0" /></header>
 		<div id="pagetitle">
-			<h1>AVF Demo</h1>
+            <h1>Welcome to Code Meow Demos!</h1>
 		</div>
 		<div data-role="content" class="content">
 			<div class="section">
@@ -36,15 +38,15 @@
 			</div>
 			<div class="section">
 				<h2>iOS/Android Native Feature Demo(s)</h2>
-				<div class="icon"><p><a href="notification.html">Alert</a></p></div>
-				<div class="icon"><p><a href="geo.html">Geo</a></p></div>
+				<div class="icon"><p><a href="notification.html" data-ajax="false">Alert</a></p></div>
+				<div class="icon"><p><a href="geo.html" data-ajax="false">Geo</a></p></div>
 				<div class="icon"><p>Acceler-<br />ometer</p></div>
 				<div style="clear:both; height: 10px;"></div>
 			</div>
 			<div class="section">
 				<h2>iOS or Android Native Feature Demo(s)</h2>
-				<div class="icon"><p><a href="contact.html">Contacts</a></p></div>
-				<div class="icon"><p><a href="camera.html">Camera</a></p></div>
+				<div class="icon"><p><a href="contact.html" data-ajax="false">Contacts</a></p></div>
+				<div class="icon"><p><a href="camera.html" data-ajax="false">Camera</a></p></div>
 				<div class="icon"><p>Network</p></div>
 				<div class="icon"><p>etc</p></div>
 				<div style="clear:both; height: 10px;"></div>
@@ -72,9 +74,9 @@
             </video> 
 		</div>
 	</div>
-    <!--
-     <script src="js/jquery-1.6.4.min.js"></script>
-	<script src="js/jquery.mobile-1.0b3.min.js"></script>
-     -->
+    
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+
 </body>
 </html>

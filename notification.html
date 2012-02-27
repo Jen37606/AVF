@@ -11,7 +11,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Mobile IE needs ClearType for smoothing fonts -->
 	<meta http-equiv="cleartype" content="on">
-	<link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
 
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
@@ -61,15 +62,12 @@
 <body>
 
 	<div data-role="page" data-add-back-btn="true">
-        <div data-role="header" data-theme="b">
-            <h1>Notification</h1>
-        </div>
+        <header><img src="images/codemeow-logo.png" width="80%" alt="" title="" border="0" /></header>
 		<div id="pagetitle">
-			<h1>AVF Demo</h1>
+			<h1>Notification</h1>
 		</div>
 		<div data-role="content" class="content">
 			<div class="section">
-				<h2>Notification</h2>
 				<p><a href="#" onclick="showAlert(); return false;">Show Alert</a></p>
     			<p><a href="#" onclick="playBeep(); return false;">Play Beep</a></p>
     			<p><a href="#" onclick="vibrate(); return false;">Vibrate</a></p>
